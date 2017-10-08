@@ -1,3 +1,26 @@
-<p>
-  nav works!
-</p>
+<div class="container">
+  <div>
+    <a class="logo"  [routerLink]="['/home']">{{name}}</a>
+  </div>
+  <div class="nav">
+
+    <ul >
+      <li [routerLinkActive]="['active']" class="nav-item active m-1">
+          <a [routerLink]="['/home']" class="nav-link">
+              <span class="align-middle">Home</span>
+          </a>
+      </li>
+      <li [routerLinkActive]="['active']" class="nav-item m-2 ">
+          <a [routerLink]="['/sign-in']" class="nav-link">
+              <span class="align-middle">Sign In</span>
+          </a>
+      </li>
+      <li [routerLinkActive]="['active']" class="nav-item m-3">
+          <a [routerLink]="['/sign-up']" class="nav-link">
+              <span class="align-middle">Sign Up</span> 
+          </a>
+      </li>
+    </ul>
+
+  </div>
+</div>

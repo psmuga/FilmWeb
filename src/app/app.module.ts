@@ -2,12 +2,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './components/app/app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
 import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
+
+import { MdSidenavModule, MdButtonModule } from '@angular/material';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,7 +35,12 @@ const appRoutes: Routes = [
   imports: [
     RouterModule.forRoot(appRoutes),
     HttpModule,
-    BrowserModule
+    BrowserAnimationsModule,
+    BrowserModule,
+    MdSidenavModule,
+    
+    MdButtonModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

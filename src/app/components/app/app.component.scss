@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+    /* On small screens, the nav menu spans the full width of the screen. Leave a space for it. */
+    nav{
+        grid-row-start: 1;
+          /* autoprefixer: off */
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+    }
+    .content{
+        grid-row-start: 2;
+          /* autoprefixer: off */
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 70px 1fr;
+}
+
+nav{
+    grid-row-start: 1;
+      /* autoprefixer: off */
+    grid-row-end: 2;
+    grid-column-start: 1;
+      /* autoprefixer: off */
+    grid-column-end: 3;
+    background-color: #3228FE;
+    padding: 1em 0;
+    position: relative;
+    
+}
+.content{
+    grid-row-start: 2;
+      /* autoprefixer: off */
+    grid-row-end: 3;
+    grid-column-start: 1;
+      /* autoprefixer: off */
+    grid-column-end: 3;
+    height: calc(100vh - 70px);
+    width: 100vw;
+}
