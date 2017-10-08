@@ -1,7 +1,21 @@
+$color-prime: #fff;
 ul{
   list-style-type: none;
+
+}
+li{
+  color: $color-prime;
 }
 a{
   text-decoration: none;
-  
+  color: $color-prime;
+}
+.container{
+  // background-image: url('../../../assets/img/bg.jpg');
+  // background-position-y: 7em;
+  // background-position:0 0;
+  width: 100vw;
+  margin-top: -14px;
+  height: 7em;  
+  // background-color: rgba(0,0,0,0) !important;
 }

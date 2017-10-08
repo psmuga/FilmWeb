@@ -21,7 +21,9 @@
 .wrapper{
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 70px 1fr;
+    grid-template-rows: 7em 1fr;
+
+    
 }
 
 nav{
@@ -31,10 +33,10 @@ nav{
     grid-column-start: 1;
       /* autoprefixer: off */
     grid-column-end: 3;
-    background-color: #3228FE;
+    // background-color: #1e83ec;
     padding: 1em 0;
     position: relative;
-    
+    background-color: rgba(0,0,0,0) !important;
 }
 .content{
     grid-row-start: 2;
@@ -43,6 +45,6 @@ nav{
     grid-column-start: 1;
       /* autoprefixer: off */
     grid-column-end: 3;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 7em);
     width: 100vw;
 }
