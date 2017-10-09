@@ -1,0 +1,22 @@
+$fontcolor:#fff;
+
+.container{
+    background-image: url('../../../assets/img/bg.jpg');
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    margin-top: calc(-7em);
+    display: flex;
+    flex-direction: column;
+    color: $fontcolor;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+#showcase h1{
+    font-size: 3em;
+    line-height: 1.2;
+
+}
