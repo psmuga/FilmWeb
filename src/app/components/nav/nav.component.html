@@ -1,15 +1,11 @@
 <div class="container">
-  <div>
+  <div class="mark">
     <a class="logo"  [routerLink]="['/home']">{{name}}</a>
   </div>
   <div class="nav">
 
     <ul >
-      <li [routerLinkActive]="['active']" class="nav-item active m-1">
-          <a [routerLink]="['/home']" class="nav-link">
-              <span class="align-middle">Home</span>
-          </a>
-      </li>
+      
       <li [routerLinkActive]="['active']" class="nav-item m-2 ">
           <a [routerLink]="['/sign-in']" class="nav-link">
               <span class="align-middle">Sign In</span>
@@ -20,6 +16,11 @@
               <span class="align-middle">Sign Up</span> 
           </a>
       </li>
+      <li [routerLinkActive]="['active']" class="nav-item active m-1">
+        <a [routerLink]="['/home']" class="nav-link">
+            <span class="align-middle">Home</span>
+        </a>
+    </li>
     </ul>
 
   </div>

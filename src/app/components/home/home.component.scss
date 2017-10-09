@@ -36,9 +36,15 @@ $fontcolor:#fff;
     padding: 10px 20px;
     border-radius: 10px;
     border: $fontcolor 1px solid;
-    margin-top: 20px;
 }
 #showcase .button:hover{
     background: $fontcolor;
     color: #000;
+}
+#showcase .buttons{
+    margin-top: 20px;
+    
+}
+#showcase .button:first-of-type{
+    margin-right: 2em;
 }
