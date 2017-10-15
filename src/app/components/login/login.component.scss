@@ -1,0 +1,12 @@
+.ro{
+    width: auto;
+    margin-bottom: 1.5em;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+button{
+    width: min-content;
+    margin-top: 1.5em;
+}

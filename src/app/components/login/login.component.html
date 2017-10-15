@@ -1,0 +1,23 @@
+
+<form [formGroup]="myform" (ngSubmit)="onSubmit()">
+    <md-form-field  class="ro">
+      <input mdInput placeholder="Login"  formControlName="login" required>
+      <md-error *ngIf="myform.controls.login.hasError('required')">
+          Login is <strong>required</strong>
+      </md-error>
+      <md-error *ngIf="myform.controls.login.hasError('pattern')">
+          Please enter a valid login
+      </md-error>
+    </md-form-field>
+    <md-form-field class="ro">
+      <input type="password" mdInput placeholder="Password" formControlName="password" required>
+      <md-error *ngIf="myform.controls.password.hasError('required')">
+          Password is <strong>required</strong>
+      </md-error>
+      <md-error *ngIf="myform.controls.password.hasError('pattern')">
+          Please enter a valid password
+      </md-error>
+    </md-form-field>
+
+    <button type="submit" md-raised-button >Submit</button>
+</form>
